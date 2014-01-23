@@ -20,14 +20,14 @@ TARGET=bpwd_tst$(EXT)
 all: $(TARGET)
 
 $(TARGET): smbustst.o ioaccess.o
-	-$(CC) -o $(TARGET) smbustst.o ioaccess.o
+	-$(CC) $(CFLAGS) -o $(TARGET) smbustst.o ioaccess.o
 	-$(CP) $(TARGET) $(BIN_PATH) 
 
 smbustst.o: smbustst.c
-	-$(CC) -c $^
+	-$(CC) $(CFLAGS) -c $^
 
 ioaccess.o: ioaccess.c
-	-$(CC) -c $^
+	-$(CC) $(CFLAGS) -c $^
 
 clean:
 	-$(RM) $(TARGET)

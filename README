@@ -1,0 +1,5 @@
+=== Compile ===
+
+#32-bit example:
+make -f Makefile.linux clean
+CC=gcc CFLAGS=-m32 make -f Makefile.linux

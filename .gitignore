@@ -1,0 +1,3 @@
+# Ignore compile objects
+*.o
+*.ko
