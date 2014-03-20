@@ -3,3 +3,17 @@
 #32-bit example:
 make -f Makefile.linux clean
 CC=gcc CFLAGS=-m32 make -f Makefile.linux
+
+#Need to KINC to the "real" 'uname -r'
+INSTALL_MOD_PATH=/pl/pl_linux make -f Makefile.linux
+
+=== Example commands === 
+
+#For FW-7568A
+
+#get info
+bpwd_tst -I -d 0x37 0x1
+#enable all System-Off Bypass
+#4 bit field - 0x1 will do pair1, 0x3 for pair 1 and 2 and so forth.
+bpwd_tst -d 0x37 -c 0x10 -o 0xf -w
+
