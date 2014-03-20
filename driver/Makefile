@@ -8,6 +8,7 @@ NEW_KVER  := $(shell uname -r | cut -c1-2 | sed 's/2\.[56]/2\.6/')
 
 # Makefile for a basic kernel module - 2.4.x
 KINC=
+#KINC=3.10.12-gentoo
 ifeq ($(KINC),)
 KINC  := $(shell uname -r)
 endif

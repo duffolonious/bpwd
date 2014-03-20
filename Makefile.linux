@@ -4,7 +4,7 @@
 # This is suitable for DOS environment or evaluation purpose in Linux.
 # Set to 0 to leave IO access to driver for noraml operation.
 #
-DIRECT_IO_ACCESS=0
+DIRECT_IO_ACCESS=1
 
 # Set to 1 to use Lanner driver code.
 # Set to 0 to use 2.6 kernel i2c-dec and i2c-i801 driver interface
