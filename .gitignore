@@ -1,3 +1,5 @@
 # Ignore compile objects
 *.o
 *.ko
+*o.cmd
+src/bpwd_tst
